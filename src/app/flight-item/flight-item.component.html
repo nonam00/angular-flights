@@ -1,0 +1,16 @@
+<section class="flight-item">
+  <img class="flight-img" [src]="flightItem.planeUrl" alt="">
+  <div class="flight-header">
+    <div class="flight-name">{{flightItem.name}}</div>
+    <div class="flits-cities">
+      <h2 class="flight-city-from">{{flightItem.fromCity}}</h2>
+      <h2 class="flight-city-to">{{flightItem.toCity}}</h2>
+    </div>
+  </div>
+  <a
+    class="flight-href"
+    [routerLink]="['/flight', flightItem.id]"
+  >
+    View detail...
+  </a>
+</section>

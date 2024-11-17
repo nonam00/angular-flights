@@ -1,0 +1,18 @@
+.img-logo{
+  width: 50px;
+  margin: 10px;
+}
+
+.header-logo{
+  display: flex;
+  height: 70px;
+  box-shadow: 0 3px 10px darkblue;
+}
+
+.header-add{
+  font-family: 'Calibri', serif;
+  display: block;
+  background-color: cornflowerblue;
+  color:white;
+  padding: 20px;
+}

@@ -1,0 +1,11 @@
+<main>
+  <header class="header-logo">
+    <a [routerLink]="['/']">
+      <img class="img-logo" src="/logo.png" alt="logo">
+    </a>
+    <a class="header-add" [routerLink]="['/add']">Add flight</a>
+  </header>
+  <section>
+    <router-outlet></router-outlet>
+  </section>
+</main>

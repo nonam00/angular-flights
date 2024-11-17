@@ -1,0 +1,24 @@
+<img [src]="flight.planeUrl" alt="">
+<form
+  [formGroup]="flightForm"
+  (submit)="submitFlightForm()"
+>
+  <p>
+    <label>Name:</label>
+    <input type="text" formControlName="name">
+  </p>
+  <p>
+    <label>From City:</label>
+    <input type="text" formControlName="fromCity">
+  </p>
+  <p>
+    <label>To City:</label>
+    <input type="text" formControlName="toCity">
+  </p>
+  <p>
+    <label>Date:</label>
+    <input type="date" formControlName="date">
+  </p>
+  <button type="submit">Save changes</button>
+  <button type="button" (click)="deleteFlight()">Delete this flight</button>
+</form>
